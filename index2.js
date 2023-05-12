@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const gmd = require('./utils/generateMarkdown.js');
+const readmeData = [];
 
 inquirer
     .prompt([
@@ -52,7 +53,9 @@ inquirer
         },
     ])
     .then((data) => {
-        console.log(data);
+        readmeData.push(data);
+        fs.writeFile('newREADME.md', gmd(data), (err) => 
+        err ? console.log(err) : console.log('Generated newREADME.md'));
     });
 
-    //how to do this without classes
+    // gmd(data) returns the markdown written in generateMarkdown.js with template literals
