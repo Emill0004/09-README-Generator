@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const gmd = require('./utils/generateMarkdown.js');
-const readmeData = [];
 
 inquirer
     .prompt([
@@ -53,9 +52,11 @@ inquirer
         },
     ])
     .then((data) => {
-        readmeData.push(data);
         fs.writeFile('newREADME.md', gmd(data), (err) => 
         err ? console.log(err) : console.log('Generated newREADME.md'));
     });
 
     // gmd(data) returns the markdown written in generateMarkdown.js with template literals
+
+    // TODO: 
+    // License
