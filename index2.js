@@ -37,7 +37,7 @@ inquirer
         {
             type: 'list',
             message: 'Choose a license.',
-            choices: ['test1', 'test2', 'test3'],
+            choices: ['GNUAGPLv3', 'GNUGPLv3', 'GNULGPLv3', 'MozillaPublicLicense2.0', 'ApacheLicense2.0', 'MITLicense', 'BoostSoftwareLicense1.0', 'TheUnlicense'],
             name: 'license',
         },
         {
@@ -60,3 +60,5 @@ inquirer
 
     // TODO: 
     // License
+    // Comments
+    // Readme

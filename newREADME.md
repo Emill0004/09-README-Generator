@@ -1,4 +1,7 @@
 # test
+
+  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+  
   ## Description
   test
 
@@ -9,7 +12,7 @@
   4. [Contributing](#contributing)
   5. [Tests](#tests)
   6. [Questions](#questions)
-
+  
   ## Installation
   test
 
@@ -17,6 +20,7 @@
   test
 
   ## License
+  This project is covered under the GNUAGPLv3 license.
 
   ## Contributing
   test
@@ -25,7 +29,7 @@
   test
 
   ## Questions
-  GitHub: [Emill0004](https://github.com/Emill0004)
+  GitHub: [test](https://github.com/test)
 
-  email: e.s.miller13125@gmail.com - Reach out to me at this email address with any additional questions!
+  email: test - Reach out to me at this email address with any additional questions!
 
