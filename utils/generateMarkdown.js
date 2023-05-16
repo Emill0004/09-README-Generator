@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// The following two arrays store the markdown for the license badge and the links to each license.
 const badgeArray = [
 "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)",
 "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
@@ -22,6 +21,7 @@ const linkArray = [
   "http://unlicense.org/"
 ];
 
+// This function uses if statements to determine which license badge to return.
 function renderLicenseBadge(license) {
   if (license == 'GNUAGPLv3') {
     return badgeArray[0];
@@ -44,8 +44,7 @@ function renderLicenseBadge(license) {
   };
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// This function uses if statements to determine which link is returned.
 function renderLicenseLink(license) {
   if (license == 'GNUAGPLv3') {
     return linkArray[0];
@@ -68,8 +67,7 @@ function renderLicenseLink(license) {
   };
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// This function returns markdown for the license section of the README if the parameter license isn't 'None'.
 function renderLicenseSection(license) {
   if (license == 'None') {
     return ``;
@@ -80,7 +78,7 @@ function renderLicenseSection(license) {
   };
 };
 
-// TODO: Create a function to generate markdown for README
+// This function returns markdown for the README based on user input.
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -129,4 +127,5 @@ function generateMarkdown(data) {
 `;
 }
 
+// Exports the generateMarkdown function.
 module.exports = generateMarkdown;

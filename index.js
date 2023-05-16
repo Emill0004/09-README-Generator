@@ -1,7 +1,9 @@
+// These three lines import the packages needed for the application.
 const inquirer = require('inquirer');
 const fs = require('fs');
 const gmd = require('./utils/generateMarkdown.js');
 
+// The .prompt section contains all the questiones to ask the user.
 inquirer
     .prompt([
         {
@@ -51,13 +53,8 @@ inquirer
             name: 'email',
         },
     ])
+    // After the user has answered all questions newREADME.md is written.
     .then((data) => {
         fs.writeFile('newREADME.md', gmd(data), (err) => 
         err ? console.log(err) : console.log('Generated newREADME.md'));
     });
-
-    // gmd(data) returns the markdown written in generateMarkdown.js with template literals
-
-    // TODO: 
-    // Comments
-    // Readme
