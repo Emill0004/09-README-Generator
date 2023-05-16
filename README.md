@@ -16,6 +16,8 @@
   ## Usage
   Run 'node index.js' in the terminal and then enter a response for each prompt given, afterwards a file called newREADME.md will be created using the afforementioned responses.
 
+  [Video Demonstration](https://drive.google.com/file/d/1vyFXy7jub1FogtClJPyD8glO66zHnhUR/view)
+
   ## Questions
   GitHub: [Emill0004](https://github.com/Emill0004)
 
